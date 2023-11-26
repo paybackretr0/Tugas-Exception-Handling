@@ -25,7 +25,10 @@ public class Demo {
             double hargaBarang = scanner.nextDouble();
             System.out.print("Jumlah barang: ");
             int jumlah = scanner.nextInt();
-            barang[i] = new Barang(namaBarang, hargaBarang, jumlah);
+            System.out.print("Diskon barang (%): ");
+            double diskonBarang = scanner.nextDouble();
+
+            barang[i] = new BarangDiskon(namaBarang, hargaBarang, jumlah, diskonBarang);
         }
 
         Transaksi transaksi = new Transaksi(barang, pelanggan, nomorFaktur);
