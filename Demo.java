@@ -45,7 +45,7 @@ public class Demo {
             }
             System.out.println("Total Bayar: " + transaksi.getTotalBayar());
         } catch (InputMismatchException e) {
-            System.out.println("Kesalahan Input: " + e.getMessage());
+            System.out.println("Kesalahan Input, Tipe Data Tidak Sesuai");
         } finally {
             scanner.close();
         }
